@@ -11,10 +11,12 @@ Mazes can either be generated at random or loaded from a predefined file.
 ## Live Demos
 Generated:
 - [BlockLike based, full screen, random obstacles](https://www.ronilan.com/a-mazing-thing/blocklike.html)
+
 - [Vanilla JS based, full screen, random obstacles](https://www.ronilan.com/a-mazing-thing/vanilla.html)
 
 Loaded:
 - [BlockLike based, loaded from file](https://www.ronilan.com/a-mazing-thing/blocklike.html#1)
+
 - [Vanilla JS based, loaded from file](https://www.ronilan.com/a-mazing-thing/vanilla.html#4)
  
 Accessing those pages will generate a maze. First click sets the start point, second click sets the end point and the maze  then solved using the A* algorithm. The animation is for illustration only and happens after computation has completed. When animation is done the maze will reset itself and await a new start and end points.
