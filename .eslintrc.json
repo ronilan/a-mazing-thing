@@ -1,0 +1,44 @@
+{
+    "extends": "airbnb",
+    "globals": {
+        "window": true,
+        "blockLike": true
+    },
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-underscore-dangle": [
+            "error", { 
+                "allowAfterThis": true,
+                "allow": []
+            }
+        ],
+        "new-cap": ["error", { "newIsCap": false }],
+        "class-methods-use-this": "off",
+        "no-unused-vars": "off",
+        "no-console": "off",
+        "require-jsdoc": ["off", {
+            "require": {
+                "FunctionDeclaration": true,
+                "MethodDefinition": true,
+                "ClassDeclaration": false,
+                "ArrowFunctionExpression": false,
+                "FunctionExpression": false
+            }
+        }]
+    }
+}

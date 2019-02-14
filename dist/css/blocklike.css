@@ -1,0 +1,11 @@
+.maze {
+  padding-top: 15px;
+}
+
+.sprite {
+  min-width: 25px;
+  min-height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #fefefe;
+}
