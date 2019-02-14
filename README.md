@@ -66,10 +66,10 @@ This is a maze:
 ```
 
 There are two ways you can design your own mazes:
-1. Create a maze json file. 
-Examples are at the ```dist/mazes folder```.
-2. Create an ASCII maze.
-Use the + -- | notation. Examples are at the ```drafts``` folder. Use the converter script to generate a maze json. From project root: ```node scripts/convert.js drafts/3.txt > dist/mazes/3.json```
+
+1. Create a maze json file. Examples are at the ```dist/mazes folder```.
+
+2. Create an ASCII maze. Use the + -- | notation. Examples are at the ```drafts``` folder. Use the converter script to generate a maze json. From project root: ```node scripts/convert.js drafts/3.txt > dist/mazes/3.json```
 
 ## Authors
 
