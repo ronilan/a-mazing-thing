@@ -1,0 +1,45 @@
+html, 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.maze {
+  padding-top: 15px;
+}
+
+
+.maze td {
+  min-width: 25px;
+  min-height: 25px;
+  text-align: center;
+  background-color: #fefefe;
+  line-height: 25px;
+}
+
+.maze td.clickable {
+  cursor: pointer;
+}
+
+.maze td.start {
+  color: blue;
+  background-color: #eeeeff;
+}
+
+.maze td.goal {
+  color: darkblue;
+  background-color: #eeeeff;
+}
+
+.maze td.path {
+  color: blue;
+  background-color: #eeeeff;
+}
+
+.maze td.not-clickable {
+  cursor: none;
+}
+
+.maze table {
+  margin: auto;
+}

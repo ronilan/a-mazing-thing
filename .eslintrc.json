@@ -39,6 +39,14 @@
                 "ArrowFunctionExpression": false,
                 "FunctionExpression": false
             }
-        }]
+        }],
+        "react/forbid-prop-types": [
+          true, 
+          { 
+            "forbid": ["any", "array"], 
+            "checkContextTypes": true, 
+            "checkChildContextTypes": true
+          }
+        ]
     }
 }

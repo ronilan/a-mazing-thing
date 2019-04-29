@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
   mode: 'none',
   entry: {
+    react: './src/react.jsx',
     vanilla: './src/vanilla.js',
     loader: './src/loader.js',
   },
@@ -20,6 +21,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      },
+      {
         test: /\.jsx?$/, // both .js and .jsx
         loader: 'eslint-loader',
         include: path.resolve(process.cwd(), 'src'),
@@ -29,13 +35,5 @@ module.exports = {
         },
       },
     ]
-  },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist',
-    compress: true,
-    host: '0.0.0.0',//your ip address
-    port: 8080,
-    //writeToDisk: true
   }
 };

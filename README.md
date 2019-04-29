@@ -4,30 +4,34 @@
 
 This repo a demo of an [A* pathfinding algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) encapsulated as an ES6 JavaScript Class.
 
-There are two interactive demos included, one written in Vanilla JavaScript and one written using the [BlocklLike.js](https://github.com/ronilan/BlockLike) (https://www.blocklike.org) educational library.
+There are three interactive demos included, one written in Vanilla JavaScript,one written using [React](https://reactjs.org/) (https://reactjs.org/) and one written using the [BlocklLike.js](https://github.com/ronilan/BlockLike) (https://www.blocklike.org) educational library.
 
 Mazes can either be generated at random or loaded from a predefined file.
 
 ## Live Demos
 Generated:
 
-- [BlockLike based, full screen, random obstacles](https://www.ronilan.com/a-mazing-thing/blocklike.html)
-
 - [Vanilla JS based, full screen, random obstacles](https://www.ronilan.com/a-mazing-thing/vanilla.html)
+
+- [React based, full screen, random obstacles](https://www.ronilan.com/a-mazing-thing/react.html)
+
+- [BlockLike based, full screen, random obstacles](https://www.ronilan.com/a-mazing-thing/blocklike.html)
 
 Loaded:
 
-- [BlockLike based, loaded from file](https://www.ronilan.com/a-mazing-thing/blocklike.html#1)
+- [Vanilla JS based, loaded from file](https://www.ronilan.com/a-mazing-thing/vanilla.html#1)
 
-- [Vanilla JS based, loaded from file](https://www.ronilan.com/a-mazing-thing/vanilla.html#4)
+- [BlockLike based, loaded from file](https://www.ronilan.com/a-mazing-thing/blocklike.html#2)
+
+- [React based, loaded from file](https://www.ronilan.com/a-mazing-thing/vanilla.html#3)
  
 Accessing those pages will generate a maze. 
 
-First click sets the start point, second click sets the end point and the maze is then solved using the A* algorithm. 
+First click sets the starting point, second click sets the end point. The maze is then solved using the A* algorithm. 
 
 The animation is for illustration only and it happens only after computation has completed. When animation is done the maze will reset itself and await new start and end points.
 
-All obstacles are emoji. They will differ in look between devices.
+All obstacles are emoji. They may differ in look between devices.
 
 ## Develop
 
