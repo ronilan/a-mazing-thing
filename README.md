@@ -21,9 +21,9 @@ Loaded:
 
 - [Vanilla JS based, loaded from file](https://www.ronilan.com/a-mazing-thing/vanilla.html#1)
 
-- [BlockLike based, loaded from file](https://www.ronilan.com/a-mazing-thing/blocklike.html#2)
+- [React based, loaded from file](https://www.ronilan.com/a-mazing-thing/react.html#3)
 
-- [React based, loaded from file](https://www.ronilan.com/a-mazing-thing/vanilla.html#3)
+- [BlockLike based, loaded from file](https://www.ronilan.com/a-mazing-thing/blocklike.html#2)
  
 Accessing those pages will generate a maze. 
 
