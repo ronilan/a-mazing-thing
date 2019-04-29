@@ -42,8 +42,7 @@ function vanilla(solver) {
   }
 
   // there is no solution
-  function noPath(goalPoint, cloned) {
-    console.log('no path');
+  function noPath(startPoint, goalPoint, cloned) {
     const clonedMaze = cloned;
 
     clonedMaze[goalPoint[0]][goalPoint[1]].goal = false;
@@ -52,8 +51,10 @@ function vanilla(solver) {
     // reset
     setTimeout(() => {
       delete clonedMaze[goalPoint[0]][goalPoint[1]].goal;
+      delete clonedMaze[startPoint[0]][startPoint[1]].start;
       render(clonedMaze); // eslint-disable-line no-use-before-define
       goal = null;
+      start = null;
     }, 1000);
   }
 
@@ -78,7 +79,7 @@ function vanilla(solver) {
       if (solver.path.length) {
         tracePath(path, clonedMaze);
       } else {
-        noPath(goal, clonedMaze);
+        noPath(start, goal, clonedMaze);
       }
     }
   }
