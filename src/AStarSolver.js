@@ -56,7 +56,6 @@ export default class AStarSolver {
 
   /**
   * _findNeighbours - finds the neighbours of a given node
-  * https://en.wikipedia.org/wiki/Taxicab_geometry
   *
   * @private
   * @param {object} node - an object from the mapped maze.
