@@ -90,8 +90,11 @@ function noPath() {
 
   goalSprite.wait(1);
   goalSprite.removeFrom(stage);
+  startSprite.removeFrom(stage);
+
   goalSprite.inner('&#9679');
   goal = null;
+  start = null;
 }
 
 // handle a click
