@@ -100,7 +100,7 @@ class Maze extends React.Component {
           // wait before each "update". This allows rendering to happen.
           setTimeout(() => {
             this.setState({ mappedMaze, path, drawing: true });
-          }, 1); // note: react render is "slow" enough
+          }, 100); // note: react render takes "unknown" time
         }
         // nothing more to draw
         if (drawing && !path.length) {
