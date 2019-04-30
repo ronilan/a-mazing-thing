@@ -1,7 +1,7 @@
 {
-  "name": "Mazer",
+  "name": "A* Mazing Thing",
   "version": "0.0.1",
-  "description": "A Mazing Thing (WIP)",
+  "description": "An A* pathfinding algorithm encapsulated as an ES6 JavaScript Class with supporting tools and demos",
   "main": null,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
