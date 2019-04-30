@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>A* Mazing Thing - A* pathfinding algorithm in JavaScript</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="./icons/site.webmanifest">
+    <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+    <h1>A* Mazing Thing</h1>
+    <div id="vanilla-parent"></div>
+<!--     <div id="react-parent" class="maze"></div>
+    <div id="blocklike-parent"></div> -->
+      <div id="notes">
+        <hr>
+        <h2>Notes</h2>
+        <ol>
+          <li>This is an interactive demo of the <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* pathfinding algorithm</a>.</li>
+          <li>The maze is randomly generated on page load. First click sets the starting point, second click sets the end point. The maze is then solved using the A* algorithm.</li>
+          <li>The animation is for illustration only and it happens only after computation has completed. When animation is done the maze will reset itself and await new start and end points.</li>
+          <li>All obstacles are emoji. They may differ in look between devices.</li>
+          <li>Source code at <a href="https://bitbucket.org/ronilan/a-mazing-thing">Bitbucket</a>. The A* Solver is encapsulated in an ES6 JavaScript Class. It's MIT licensed.</li>
+          <li>Wherever the path leads, always be a mazed.</li>
+        </ol>
+      </div>
+
+    </div>
+    <script>
+      window.mazeRows = 15;
+      window.mazeColumns = 20;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/blocklike@0.9.13/dist/blocklike-0.9.13.min.js"></script>
+    <script src="./js/vanilla.js"></script>
+<!--     <script src="./js/react.js"></script>
+    <script src="./js/blocklike.js"></script> -->
+    <script src="./js/loader.js"></script>
+
+  </body>
+</html>

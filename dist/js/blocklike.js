@@ -1,5 +1,9 @@
 /* init entities */
-const stage = new blockLike.Stage();
+const stage = new blockLike.Stage({
+  parent: window.document.getElementById('blocklike-parent') || window.document.body,
+  width: window.mazeColumns * 30 || window.innerWidth,
+  height: window.mazeRows * 30 || window.innerHeight
+});
 stage.addClass('stage');
 
 const startSprite = new blockLike.Sprite({ width: 25, height: 25, color: '#eeeeff' });

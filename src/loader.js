@@ -7,7 +7,7 @@ import { mazeFromFileNameinHash, mazeFromRandom } from './maze-generators';
 */
 async function init() {
   let json = await mazeFromFileNameinHash();
-  if (!json) json = mazeFromRandom();
+  if (!json) json = mazeFromRandom(window.mazeRows, window.mazeColumns);
 
   const solver = new AStarSolver(json.maze);
 

@@ -177,4 +177,4 @@ class Maze extends React.Component {
   }
 }
 
-ReactDOM.render(<Maze />, window.document.getElementById('root'));
+ReactDOM.render(<Maze />, window.document.getElementById('react-parent'));

@@ -93,9 +93,9 @@ function vanilla(solver) {
     }));
 
     // will be removed and reappended.
-    const containerEl = window.document.createElement('DIV');
-    containerEl.id = 'container';
-    containerEl.className = 'maze';
+    const mazeEl = window.document.createElement('DIV');
+    mazeEl.id = 'maze';
+    mazeEl.className = 'maze';
 
     const tableEl = window.document.createElement('TABLE');
 
@@ -153,12 +153,14 @@ function vanilla(solver) {
       tableEl.appendChild(rowEl);
     });
 
-    containerEl.appendChild(tableEl);
+    mazeEl.appendChild(tableEl);
 
-    const existing = window.document.getElementById('container');
-    if (existing) window.document.body.removeChild(existing);
+    const parent = window.document.getElementById('vanilla-parent') || window.document.body;
 
-    window.document.body.appendChild(containerEl);
+    const existing = window.document.getElementById('maze');
+    if (existing) parent.removeChild(existing);
+
+    parent.appendChild(mazeEl);
   }
 
   // render it

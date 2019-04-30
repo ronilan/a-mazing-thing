@@ -33,8 +33,8 @@ export async function mazeFromFileNameinHash() {
 * @returns {object} - a maze json
 */
 export function mazeFromRandom(rows = null, columns = null) {
-  const needColumns = rows || parseInt(((window.innerWidth - 30) / 30), 10);
-  const needRows = columns || parseInt(((window.innerHeight - 30) / 30), 10);
+  const needColumns = columns || parseInt(((window.innerWidth - 30) / 30), 10);
+  const needRows = rows || parseInt(((window.innerHeight - 30) / 30), 10);
 
   const json = {
     maze: new Array(needRows).fill(null).map(() => new Array(needColumns).fill(null).map(() => {
