@@ -4,7 +4,7 @@
 
 This repo a demo of an [A* pathfinding algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) encapsulated as an ES6 JavaScript Class.
 
-There are three interactive demos included, one written in Vanilla JavaScript,one written using [React](https://reactjs.org/) (https://reactjs.org/) and one written using the [BlocklLike.js](https://github.com/ronilan/BlockLike) (https://www.blocklike.org) educational library.
+There are three interactive demos included, one is implemented using Vanilla JavaScript, one implemented using [React](https://reactjs.org/) (https://reactjs.org/) and one is implemented using the [BlocklLike.js](https://github.com/ronilan/BlockLike) (https://www.blocklike.org) educational library.
 
 Mazes can either be generated at random or loaded from a predefined file.
 
