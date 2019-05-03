@@ -1,5 +1,5 @@
 {
-  "name": "A* Mazing Thing",
+  "name": "a-mazing-thing",
   "version": "0.0.1",
   "description": "An A* pathfinding algorithm encapsulated as an ES6 JavaScript Class with supporting tools and demos",
   "main": null,
