@@ -12,17 +12,17 @@
 *
 * @returns {object} - a maze json
 */
-export async function mazeFromFileNameinHash() {
+export async function mazeFromFileNameinHash () {
   if (window.location.hash) {
     try {
-      const res = await window.fetch(`./mazes/${window.location.hash.substring(1)}.json`);
-      const json = await res.json();
-      return json;
+      const res = await window.fetch(`./mazes/${window.location.hash.substring(1)}.json`)
+      const json = await res.json()
+      return json
     } catch (err) {
-      return null;
+      return null
     }
   }
-  return null;
+  return null
 }
 
 /**
@@ -32,17 +32,17 @@ export async function mazeFromFileNameinHash() {
 * @param {number} columns - number of columns (optional). If not provided will try to fit screen.
 * @returns {object} - a maze json
 */
-export function mazeFromRandom(rows = null, columns = null) {
-  const needColumns = columns || parseInt(((window.innerWidth - 30) / 30), 10);
-  const needRows = rows || parseInt(((window.innerHeight - 30) / 30), 10);
+export function mazeFromRandom (rows = null, columns = null) {
+  const needColumns = columns || parseInt(((window.innerWidth - 30) / 30), 10)
+  const needRows = rows || parseInt(((window.innerHeight - 30) / 30), 10)
 
   const json = {
     maze: new Array(needRows).fill(null).map(() => new Array(needColumns).fill(null).map(() => {
-      const ratio = Math.floor(Math.random() * 3); // how many obstacles per space
-      if (!ratio) return Math.floor(Math.random() * 10) + 1; // randomize obstacles
-      return 0;
-    })),
-  };
+      const ratio = Math.floor(Math.random() * 3) // how many obstacles per space
+      if (!ratio) return Math.floor(Math.random() * 10) + 1 // randomize obstacles
+      return 0
+    }))
+  }
 
-  return json;
+  return json
 }

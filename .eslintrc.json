@@ -1,52 +1,22 @@
 {
-    "extends": "airbnb",
-    "globals": {
-        "window": true,
-        "blockLike": true
+    "env": {
+        "browser": true,
+        "es2021": true
     },
+    "extends": [
+        "plugin:react/recommended",
+        "standard"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
     "rules": {
-        "indent": [
-            "error",
-            2
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
-        "no-underscore-dangle": [
-            "error", { 
-                "allowAfterThis": true,
-                "allow": []
-            }
-        ],
-        "new-cap": ["error", { "newIsCap": false }],
-        "class-methods-use-this": "off",
-        "no-unused-vars": "off",
-        "no-console": "off",
-        "require-jsdoc": ["off", {
-            "require": {
-                "FunctionDeclaration": true,
-                "MethodDefinition": true,
-                "ClassDeclaration": false,
-                "ArrowFunctionExpression": false,
-                "FunctionExpression": false
-            }
-        }],
-        "react/forbid-prop-types": [
-          true, 
-          { 
-            "forbid": ["any", "array"], 
-            "checkContextTypes": true, 
-            "checkChildContextTypes": true
-          }
-        ]
     }
 }

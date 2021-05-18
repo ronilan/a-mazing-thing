@@ -14,9 +14,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/js')
   },
   plugins: [
-    new CopyWebpackPlugin([
+    new CopyWebpackPlugin({
+      patterns: [
       { from: 'src/blocklike.js', to: 'blocklike.js' } //blocklike code can not be transpiled, so just copy
-    ], {})
+    ]})
   ],
   module: {
     rules: [
