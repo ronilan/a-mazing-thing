@@ -5,10 +5,9 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist',
+    static: './dist',
     compress: true,
     host: '0.0.0.0',//your ip address
-    port: 8080,
-    writeToDisk: true
+    port: 8080
   }
 });
